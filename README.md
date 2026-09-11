@@ -143,6 +143,22 @@ The API it expects is documented in [`docs/api.md`](docs/api.md) — endpoints,
 request and response shapes, and streaming frames. Any service implementing that
 contract will work with this client.
 
+## When the law changes
+
+Indian law moves constantly, and most people find out after it has affected them.
+A watcher checks official sources every morning — India Code and the Press
+Information Bureau — and announces central and constitutional changes as it finds
+them: a new Act commencing, an amendment to a Schedule of the Constitution, an
+ordinance.
+
+- **Telegram:** [@AionAnalyticsIndia](https://t.me/AionAnalyticsIndia)
+- **Discord:** [discord.gg/bCuH37bv](https://discord.gg/bCuH37bv)
+
+Each notice says *that* the law moved and links the source. It does not tell you
+what the law now says, because at that point nobody has reviewed it — and
+announcing an interpretation before a human has read the provision is the exact
+failure this project exists to prevent.
+
 ## Trials
 
 The service is in controlled trial rather than open release, because a legal
