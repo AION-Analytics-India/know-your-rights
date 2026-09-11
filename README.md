@@ -80,9 +80,16 @@ Release is deliberately gated on three things engineering cannot clear alone:
 3. **Controlled user testing** with the communities it is built for, in their own
    languages.
 
-**There is no public endpoint yet.** A hosted trial is being arranged; until
-then the app in this repository runs against an endpoint you host yourself. We
-are recruiting reviewers now — see [Trials](#trials).
+### ▶ Try it
+
+**[dashboard.aiondashboard.site/models/know-your-rights/demo](https://dashboard.aiondashboard.site/models/know-your-rights/demo)**
+
+Open, running, no sign-up. Three free questions, then a daily limit — the cap
+exists because every answer is generated on our own hardware.
+
+**If you use it, please rate the answer.** The pilot is gated on fifty rated
+answers before it widens, and a rating on a *wrong* answer is worth more to us
+than a rating on a right one.
 
 ## Quality
 
@@ -138,9 +145,10 @@ contract will work with this client.
 
 ## Trials
 
-The service is going into controlled trial rather than open release, because a
-legal answer that is wrong can cost somebody something real. Recruitment is open;
-the hosted trial endpoint is not live yet.
+The service is in controlled trial rather than open release, because a legal
+answer that is wrong can cost somebody something real. The
+[demo](https://dashboard.aiondashboard.site/models/know-your-rights/demo) is
+open to anyone; what gates a wider release is review by people who know the law.
 
 **We are looking for:**
 

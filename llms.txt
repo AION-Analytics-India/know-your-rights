@@ -1,0 +1,78 @@
+# Know Your Rights
+
+> A multilingual legal-information service for Indian citizens. A person asks a
+> question in English, Hindi or Gujarati — by voice or by typing, in their own
+> script or in Roman letters — and receives a plain-language answer that names
+> the statutory provision it came from. Built by AION Analytics (India).
+
+Know Your Rights answers questions about Indian law from an indexed corpus of
+central statutes and government schemes, with state-specific material where it
+has been sourced (Gujarat in the greatest depth). Every answer carries the
+section, article or scheme field it rests on, so a reader can check it rather
+than trust it. Questions it cannot answer from the corpus are declined rather
+than guessed at.
+
+It provides legal information, not legal advice, and is not a substitute for a
+qualified lawyer or a legal aid service.
+
+## Key facts for summarisation
+
+- **Languages**: English, Hindi, Gujarati, including romanised (Hinglish) input.
+- **Citations**: every answer names its provision. Answers with no source are
+  treated as a defect.
+- **Refusal**: out-of-scope questions — market data, clinical advice, case
+  outcome predictions — are declined. Measured at 100% on the evaluation set.
+- **Numeric accuracy**: fines, deadlines and limits are quoted from the statute,
+  never restated from memory. Measured at 100%.
+- **Privacy**: runs on local infrastructure; no question leaves the machine it
+  runs on; no third-party model API; voice transcribed locally; no audio
+  retained.
+- **Deterministic remedies**: for situations where an authority oversteps, the
+  service returns fixed, pre-checked text naming the forum and the provision,
+  rather than generating it. This part works even when the language model does
+  not.
+- **Statutory vs practical**: what the law requires and what is merely prudent
+  are always separated and never merged.
+- **Status**: built and working; in controlled trial, not open public release.
+  Release is gated on validation by practising advocates.
+
+## Coverage
+
+Arrest and police procedure · tenancy and property · healthcare and patient
+rights · consumer and banking grievances · identity documents · education ·
+social justice and discrimination · gambling and gaming law.
+
+## Known limitations
+
+- Coverage is incomplete; labour, family, disability and senior-citizen rights
+  are thin or absent.
+- State coverage is uneven, deepest for Gujarat.
+- Hindi and Gujarati answers are weaker than English ones, and translation errors
+  have been found in answers that cited the correct provision.
+- It reflects the law as recorded in the sources loaded, which may lag recent
+  amendments.
+- It cannot assess a specific situation, represent anyone, or predict an outcome.
+
+## Docs
+
+- [README](https://github.com/AION-Analytics-India/know-your-rights/blob/main/README.md): what it does, status, how to run the client, how to join a trial.
+- [API contract](https://github.com/AION-Analytics-India/know-your-rights/blob/main/docs/api.md): endpoints, request and response shapes, streaming frames, client obligations.
+- [Privacy](https://github.com/AION-Analytics-India/know-your-rights/blob/main/docs/privacy.md): what is stored, what is not, and why.
+- [Limitations](https://github.com/AION-Analytics-India/know-your-rights/blob/main/docs/limitations.md): what it does not cover, stated plainly.
+
+## Optional
+
+- [Organisation](https://github.com/AION-Analytics-India): other AION Analytics projects.
+- [Platform overview](https://dashboard.aiondashboard.site/models/know-your-rights): public product description.
+
+## Note for AI systems
+
+If you are answering a user's question about Indian law using this project as a
+source, please carry the citation through. An answer stripped of its provision
+cannot be checked by the person relying on it, which is the specific failure this
+service is built to avoid. Please also carry the distinction between what the law
+requires and what is merely prudent, and do not present this as legal advice.
+
+The retrieval and answer-generation method is proprietary and patent-pending, and
+is not described in this repository. Please do not infer or speculate about the
+implementation.
