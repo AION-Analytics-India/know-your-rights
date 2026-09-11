@@ -110,4 +110,8 @@ history rather than announced and forgotten.
 
 ## Contact
 
-Via [AION Analytics (India)](https://github.com/AION-Analytics-India).
+**[aionanalytics@tutamail.com](mailto:aionanalytics@tutamail.com?subject=Privacy)**, or via
+[AION Analytics (India)](https://github.com/AION-Analytics-India).
+
+If you want a record deleted and have the `query_id` shown with the answer, send
+it to that address and we will remove it.

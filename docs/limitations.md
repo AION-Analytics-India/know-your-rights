@@ -42,5 +42,9 @@ its gaps is the failure mode it exists to avoid.
 ## Reporting a wrong answer
 
 A wrong legal answer is the most serious defect this project can have. Please
-open an issue with the question, the language, the answer given and what it
-should have said. Please do not include personal details of a real situation.
+open an issue, or email **[aionanalytics@tutamail.com](mailto:aionanalytics@tutamail.com?subject=Wrong%20answer)** if
+you would rather not report it in public, with the question, the language, the
+answer given and what it should have said.
+
+**Please do not include personal details of a real situation.** We do not need
+them to fix the answer, and a GitHub issue is public.

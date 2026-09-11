@@ -160,15 +160,19 @@ open to anyone; what gates a wider release is review by people who know the law.
 - **Legal aid organisations and NGOs** who would put this in front of the people
   they serve, and tell us what breaks.
 
-To take part, open an issue or write to the address on the
-[organisation profile](https://github.com/AION-Analytics-India).
+To take part, open an issue or email **[aionanalytics@tutamail.com](mailto:aionanalytics@tutamail.com?subject=Know%20Your%20Rights%20trial)**.
+Tell us which domain you work in and which language you read; that is enough to
+start.
 
 ## Reporting a wrong answer
 
 A wrong legal answer is the most serious bug this project can have. If you find
-one, open an issue with the question asked, the language, the answer given and
-what it should have said. Please do not include personal details of a real
-situation.
+one, open an issue — or email **[aionanalytics@tutamail.com](mailto:aionanalytics@tutamail.com?subject=Wrong%20answer)**
+if you would rather not do it in public — with the question asked, the language,
+the answer given and what it should have said.
+
+**Please do not include personal details of a real situation.** We do not need
+them, and an issue is public.
 
 ## Licence and use
 

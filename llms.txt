@@ -60,6 +60,10 @@ social justice and discrimination · gambling and gaming law.
 - [Privacy](https://github.com/AION-Analytics-India/know-your-rights/blob/main/docs/privacy.md): what is stored, what is not, and why.
 - [Limitations](https://github.com/AION-Analytics-India/know-your-rights/blob/main/docs/limitations.md): what it does not cover, stated plainly.
 
+## Contact
+
+Trial participation, wrong-answer reports and press: aionanalytics@tutamail.com
+
 ## Optional
 
 - [Organisation](https://github.com/AION-Analytics-India): other AION Analytics projects.
