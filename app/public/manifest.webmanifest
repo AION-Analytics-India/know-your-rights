@@ -1,0 +1,19 @@
+{
+  "name": "Know Your Rights",
+  "short_name": "Your Rights",
+  "description": "Legal information for Indian citizens, grounded in the law and citing it.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "lang": "en-IN",
+  "categories": ["education", "government", "utilities"],
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/favicon.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/apple-touch-icon-180x180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/aion-logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

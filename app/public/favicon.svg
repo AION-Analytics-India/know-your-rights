@@ -1,0 +1,19 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="116" fill="#040B15"/>
+  <circle
+    cx="256"
+    cy="212"
+    r="118"
+    fill="none"
+    stroke="#26619C"
+    stroke-width="28"
+    stroke-linecap="round"
+    stroke-dasharray="560 112"
+    transform="rotate(30 256 212)"
+  />
+  <path
+    d="M256 112 L332 334 H300 L256 218 L212 334 H180 Z"
+    fill="#E6EAF0"
+  />
+  <rect x="234" y="318" width="44" height="22" fill="#040B15"/>
+</svg>

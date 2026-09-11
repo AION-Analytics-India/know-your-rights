@@ -1,0 +1,44 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #040B15; }
+      .ring { stroke: #26619C; stroke-width: 18; fill: none; stroke-linecap: round; }
+      .a-shape { fill: #E6EAF0; }
+      .wordmark { fill: #E6EAF0; font-family: Arial, Helvetica, sans-serif; font-size: 64px; letter-spacing: 18px; }
+      .tagline { fill: #26619C; font-family: Arial, Helvetica, sans-serif; font-size: 18px; letter-spacing: 6px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" class="bg"/>
+
+  <!-- Circular Loop -->
+  <circle cx="400" cy="220" r="110"
+          class="ring"
+          stroke-dasharray="520 100"
+          transform="rotate(30 400 220)" />
+
+  <!-- Stylized A -->
+  <path class="a-shape" d="
+    M400 120
+    L470 320
+    L440 320
+    L400 210
+    L360 320
+    L330 320
+    Z
+  "/>
+
+  <!-- Loop break -->
+  <rect x="380" y="305" width="40" height="20" fill="#040B15"/>
+
+  <!-- Wordmark -->
+  <text x="400" y="420" text-anchor="middle" class="wordmark">
+    A I O N
+  </text>
+
+  <!-- Tagline -->
+  <text x="400" y="470" text-anchor="middle" class="tagline">
+    INTELLIGENCE IN CONTINUITY
+  </text>
+</svg>
