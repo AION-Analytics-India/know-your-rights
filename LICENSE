@@ -1,0 +1,32 @@
+Copyright (c) 2026 AION Analytics (India). All rights reserved.
+
+This repository contains the Know Your Rights client application, its API
+contract and its public documentation.
+
+The retrieval and answer-generation method used by the Know Your Rights service
+is proprietary and patent-pending. It is NOT contained in this repository and no
+licence to it is granted, expressly or by implication, by the publication of this
+repository or by any use of the material in it.
+
+PERMITTED, without charge:
+
+  - Reading, running and modifying the client application in this repository for
+    the purpose of evaluating the Know Your Rights service, or of building a
+    client that speaks the documented API contract.
+  - Quoting the documentation with attribution.
+
+NOT PERMITTED without prior written permission:
+
+  - Redistributing this repository, or a derivative of it, as a product or
+    service of your own.
+  - Using the AION Analytics or Know Your Rights names or marks to describe
+    another product or service.
+
+NO WARRANTY. This material is provided "as is", without warranty of any kind,
+express or implied. It provides legal information, not legal advice, and it is
+not a substitute for a qualified lawyer or a legal aid service. AION Analytics
+(India) accepts no liability for any action taken or not taken on the basis of
+anything produced by this software.
+
+For any other use, or to discuss a trial, please contact AION Analytics (India)
+via https://github.com/AION-Analytics-India.
