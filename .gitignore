@@ -2,3 +2,23 @@ node_modules/
 .next/
 .env.local
 .DS_Store
+
+# Credentials — never in a repository. The only place a token lives on this
+# machine is ~/.aion/api_tokens.json, outside every working tree, and the only
+# way one reaches a command is through an environment variable at the moment it
+# is needed. A token in a repo survives every later attempt to delete it,
+# because git keeps history.
+api_tokens.json
+api_tokens.json.bak*
+*.pat
+*_token.json
+*_tokens.json
+*credentials*.json
+.env
+.env.*
+!.env.example
+!.env.local.example
+.netrc
+*.pem
+*.key
+!**/public*.key
