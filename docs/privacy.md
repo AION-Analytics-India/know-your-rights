@@ -37,14 +37,33 @@ One record per question, containing:
 | `input_mode` | `text` or `voice`. |
 | `caller_hash` | See below. |
 
-**Your question text is stored.** That is the honest position, and we are stating
-it plainly rather than burying it: we cannot tell whether a legal answer was
-wrong without being able to read the question that produced it. This is the
-single most privacy-affecting thing the service does.
+**Your question text is stored.** That is the honest position, stated plainly
+rather than buried: we cannot tell whether a legal answer was wrong without
+reading the question that produced it. It is the single most privacy-affecting
+thing the service does, and two things limit it.
 
-So: **please do not include names, addresses, phone numbers, case numbers or
-other identifying details in a question.** The service does not need them to
-answer, and they would be stored if you typed them.
+**Identifiers are stripped before the question is written to disk.** Aadhaar
+numbers, PAN, phone numbers, email addresses and long account numbers are
+replaced with a placeholder at the moment of logging — not filtered later when
+something is read, because a reader who forgets to filter is how a redacted log
+leaks anyway. Section and article numbers survive, because they are the substance
+of the question.
+
+This is deliberately conservative: it removes *number shapes*, not names. A name
+cannot be detected reliably without a model, a model would be wrong often, and a
+redactor that errs on the permissive side is worse than none because it invites
+false confidence. So **please still avoid putting names, addresses or case
+numbers in a question** — the service does not need them to answer.
+
+**The text is deleted after 90 days.** The record survives — the counts, the
+language, whether it answered — and the words are dropped. The reason for keeping
+text has a shelf life: a fault nobody has looked at in three months will not be
+found by the words sitting on disk, while the counts that show a fault exists
+identify nobody and are kept.
+
+You can check this is really happening: `queries_with_text_expired` and
+`text_retention_days` are published at
+[`/pilot_status`](https://dashboard.aiondashboard.site/demo/kyr/status).
 
 ## `caller_hash`
 
@@ -82,6 +101,17 @@ survives a refresh and works offline. This never reaches the service. Clearing
 your browser data removes it.
 
 No analytics, no advertising trackers, no third-party scripts.
+
+## What we publish
+
+Aggregate statistics from the pilot are public: how many questions were asked,
+in which languages, how many the service could not answer and in which areas of
+law, how many people came back, and what proportion were rated useful.
+
+Every one of those is a count. There is no field in it a person could be found
+in, which is what makes publishing it possible — and publishing it is a stronger
+claim than this document can make in words. **A service that collected more than
+it needed could not show you everything it holds.**
 
 ## Who can see the log
 
