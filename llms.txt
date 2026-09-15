@@ -1,7 +1,7 @@
 # Know Your Rights
 
 > A multilingual legal-information service for Indian citizens. A person asks a
-> question in English, Hindi or Gujarati — by voice or by typing, in their own
+> question in English, Hindi or Gujarati — by typing (voice is in development), in their own
 > script or in Roman letters — and receives a plain-language answer that names
 > the statutory provision it came from. Built by AION Analytics (India).
 
@@ -33,8 +33,8 @@ qualified lawyer or a legal aid service.
   not.
 - **Statutory vs practical**: what the law requires and what is merely prudent
   are always separated and never merged.
-- **Status**: built and working; in controlled trial, not open public release.
-  Release is gated on validation by practising advocates.
+- **Status**: public pilot open, text-only, accepting users; not a released
+  product. Release is gated on validation by practising advocates.
 
 ## Coverage
 

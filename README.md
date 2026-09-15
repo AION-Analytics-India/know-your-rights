@@ -67,6 +67,7 @@ Everything below exists to avoid both.
   checked, and any number that could not be confirmed is left out rather than
   guessed.
 - **Voice in and out**, for people who find typing in their own script hard.
+  *In development: the public pilot is text-only for now.*
 - **Installable as a progressive web app.**
 
 ## Coverage
@@ -87,7 +88,7 @@ Full detail: [`docs/privacy.md`](docs/privacy.md).
 
 ## Status
 
-**Built and working end to end. Not released for open public use.**
+**Public pilot: open, text-only, and accepting users. Not a released product.**
 
 Release is deliberately gated on three things engineering cannot clear alone:
 
@@ -104,9 +105,10 @@ Release is deliberately gated on three things engineering cannot clear alone:
 Open, running, no sign-up. Three free questions, then a daily limit — the cap
 exists because every answer is generated on our own hardware.
 
-**If you use it, please rate the answer.** The pilot is gated on fifty rated
-answers before it widens, and a rating on a *wrong* answer is worth more to us
-than a rating on a right one.
+**If you use it, please rate the answer.** The pilot exists to find what the
+service gets wrong, and a rating on a *wrong* answer is worth more to us than a
+rating on a right one. Voice is switched off in the pilot for now; it returns
+once the speech licence and native-speaker review are complete.
 
 ## Quality
 
