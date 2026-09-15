@@ -1,5 +1,6 @@
 import { t } from '../lib/i18n';
 import EvidenceGuidance from './EvidenceGuidance';
+import ProofChecklist from './ProofChecklist';
 import RightsRemedy from './RightsRemedy';
 import ListenButton from './ListenButton';
 
@@ -58,7 +59,7 @@ function formatTime(at, language) {
 }
 
 export default function ChatMessage({ message, language, onRetry }) {
-  const { role, text, sources, fallback, error, streaming, note, at, retry, evidenceTip, remedies, standing, voiceEnabled } =
+  const { role, text, sources, fallback, error, streaming, note, at, retry, evidenceTip, remedies, standing, voiceEnabled, proofChecklist, helplines, proceduralGuide } =
     message;
 
   if (role === 'user') {
@@ -97,6 +98,14 @@ export default function ChatMessage({ message, language, onRetry }) {
           </p>
         ) : null}
 
+        {/* Safety first. Above the answer, not inside it: someone in danger must
+            read 'call 112' before they read how to write to a Superintendent. The
+            text comes from the card, never from the model. */}
+        {proceduralGuide?.safety_note ? (
+          <p role="alert" className="mb-3 rounded border-2 border-error/40 bg-error/10 px-3 py-2 font-semibold" lang={language}>
+            🆘 {proceduralGuide.safety_note}
+          </p>
+        ) : null}
         <div
           className="whitespace-pre-wrap break-words"
           style={{ fontSize: 'var(--text-legal)' }}
@@ -124,6 +133,13 @@ export default function ChatMessage({ message, language, onRetry }) {
             the forum to go to matters before how to preserve proof of it. */}
         {!error && !streaming ? (
           <RightsRemedy remedies={remedies} standing={standing} language={language} />
+        ) : null}
+
+        {/* The paper trail. Placed above the evidence block and open by default:
+            in India a complaint without an acknowledgement is deniable, so the
+            acknowledgement line is the most consequential sentence here. */}
+        {!error && !streaming ? (
+          <ProofChecklist checklist={proofChecklist} helplines={helplines} language={language} />
         ) : null}
 
         {/* Guidance, not law -- the component keeps the two visibly apart. */}

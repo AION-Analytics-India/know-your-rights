@@ -48,3 +48,25 @@ answer given and what it should have said.
 
 **Please do not include personal details of a real situation.** We do not need
 them to fix the answer, and a GitHub issue is public.
+
+## Procedural guidance
+
+The service now tells you what to do, who to write to and what proof to keep for
+28 common situations. Two limits are worth knowing.
+
+**The letters are in English and Hindi only.** Gujarati templates are not
+shipped, because a badly worded letter submitted to an office serves you worse
+than an English one you understand. They will follow after review by a Gujarati
+speaker.
+
+**Harassment questions can surface workplace law.** A question about harassment
+may cite the Sexual Harassment of Women at Workplace Act even when what happened
+was on a street or a train, where that Act's Internal Committee does not exist.
+The procedural steps shown alongside the answer are the ones to follow; they are
+drawn from the Bharatiya Nyaya Sanhita and the Bharatiya Nagarik Suraksha
+Sanhita, which are the right law outside a workplace.
+
+**"Digital arrest" is not covered.** There is no such thing in Indian law — that
+is the whole answer — but because it is an absence rather than a provision, the
+service cannot yet give it. If you are told you are under "digital arrest", it is
+a fraud, every time. Hang up and call 1930.

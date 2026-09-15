@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-import { quickReplies, t } from '../lib/i18n';
+import { quickReplies, t, travellerReplies } from '../lib/i18n';
 
 /**
  * A blank text box is a poor starting point for someone who is not sure what to
@@ -19,6 +19,8 @@ const VISIBLE = 6;
 
 export default function QuickReplies({ language, onPick, disabled, instant = [] }) {
   const [expanded, setExpanded] = useState(false);
+  const [traveller, setTraveller] = useState(false);
+  const travelling = travellerReplies(language);
   const all = quickReplies(language);
   const shown = expanded ? all : all.slice(0, VISIBLE);
   const shortcuts = instant
@@ -28,6 +30,43 @@ export default function QuickReplies({ language, onPick, disabled, instant = [] 
 
   return (
     <div className="space-y-4">
+      {/* Solo female traveller pack. Its own entry point rather than more tiles
+          in the general grid: these are asked away from home, often while the
+          situation is still happening, so the safety line leads. */}
+      <section aria-labelledby="traveller-heading" className="px-1">
+        <button
+          type="button"
+          onClick={() => setTraveller((value) => !value)}
+          aria-expanded={traveller}
+          disabled={disabled}
+          className="kyr-tap flex w-full items-center justify-between gap-2 rounded-lg border-2 border-ink/25 bg-white/70 px-3 py-2 text-left font-semibold"
+        >
+          <span id="traveller-heading" lang={language}>🧳 {t(language, 'travellerOpen')}</span>
+          <span aria-hidden="true">{traveller ? '▲' : '▼'}</span>
+        </button>
+        {traveller ? (
+          <>
+            <p className="mt-2 rounded bg-ink/5 px-2 py-1 text-sm font-semibold" lang={language}>
+              {t(language, 'travellerSafety')}
+            </p>
+            <div className="mt-2 grid grid-cols-2 gap-2">
+              {travelling.map((item) => (
+                <button
+                  key={item.label}
+                  type="button"
+                  disabled={disabled}
+                  onClick={() => onPick(item.query)}
+                  lang={language}
+                  className="kyr-tap rounded-lg border border-ink/20 bg-paper px-2 py-2 text-left text-sm"
+                >
+                  <span aria-hidden="true">{item.icon}</span> {item.label}
+                </button>
+              ))}
+            </div>
+          </>
+        ) : null}
+      </section>
+
       {shortcuts.length ? (
         <section aria-labelledby="instant-heading" className="px-1">
           <h2 id="instant-heading" className="text-sm font-semibold text-ink/70" lang={language}>

@@ -48,7 +48,24 @@ Everything below exists to avoid both.
 - **What the law requires and what is merely prudent are never merged.** A remedy
   whose governing Act is not yet loaded appears *without* a citation rather than
   with a plausible one.
+- **What to do, not only what the law says.** For 28 common situations it gives the
+  first steps, the office to write to **by designation** — "the Superintendent of
+  Police", not "the authorities" — where to escalate if that fails, and a
+  fill-in-the-blank letter in English and Hindi.
+- **Every procedural answer ends with a proof checklist.** In India a verbal
+  complaint leaves no trace and a written one without an acknowledgement can be
+  denied. So the answer tells you to get a stamp, a signature or an inward number
+  on *your* copy; to photograph the submission if that is refused; to send it by
+  registered post and keep the receipt. This block is fixed, not composed per
+  question.
+- **A pack for women travelling alone**, covering unsafe cabs, harassment on
+  trains, hotel safety, being followed, late-night police stops, and lost
+  documents. Every card leads with safety: **in immediate danger, call 112 first** —
+  the paperwork can wait.
 - **Verified helplines, offline.** The emergency page works with no connection.
+  Every number carries the official source it was read from and the date it was
+  checked, and any number that could not be confirmed is left out rather than
+  guessed.
 - **Voice in and out**, for people who find typing in their own script hard.
 - **Installable as a progressive web app.**
 

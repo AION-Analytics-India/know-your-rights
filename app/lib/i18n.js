@@ -59,6 +59,9 @@ const STRINGS = {
     clear: 'Clear conversation',
     language: 'Language',
     instantTitle: 'Answered instantly',
+    travellerTitle: 'Travelling alone',
+    travellerOpen: 'Travelling alone? Tap here',
+    travellerSafety: 'In immediate danger, call 112 first.',
     instantHint: 'Verified answers, no waiting.',
     emergencyLink: 'Emergency numbers',
     emergencyTitle: 'Emergency numbers',
@@ -124,6 +127,9 @@ const STRINGS = {
     clear: 'बातचीत मिटाएँ',
     language: 'भाषा',
     instantTitle: 'तुरंत जवाब',
+    travellerTitle: 'अकेले यात्रा',
+    travellerOpen: 'अकेले यात्रा कर रही हैं? यहाँ दबाएँ',
+    travellerSafety: 'तत्काल खतरे में पहले 112 पर कॉल करें।',
     instantHint: 'जाँचे हुए जवाब, कोई इंतज़ार नहीं।',
     emergencyLink: 'आपातकालीन नंबर',
     emergencyTitle: 'आपातकालीन नंबर',
@@ -189,6 +195,9 @@ const STRINGS = {
     clear: 'વાતચીત ભૂંસો',
     language: 'ભાષા',
     instantTitle: 'તરત જવાબ',
+    travellerTitle: 'એકલા મુસાફરી',
+    travellerOpen: 'એકલા મુસાફરી કરો છો? અહીં દબાવો',
+    travellerSafety: 'તાત્કાલિક ખતરામાં પહેલાં 112 પર કૉલ કરો.',
     instantHint: 'ચકાસેલા જવાબ, રાહ જોવાની જરૂર નથી.',
     emergencyLink: 'કટોકટી નંબર',
     emergencyTitle: 'કટોકટી નંબર',
@@ -209,6 +218,43 @@ const STRINGS = {
 
 // Each quick reply sends a full question in the chosen language, so a tap
 // produces exactly what a confident typist would have written.
+/**
+ * Solo female traveller pack.
+ *
+ * Kept as its own group rather than mixed into the general tiles, because these
+ * are asked in a different state of mind: often away from home, often with no
+ * local contacts, sometimes while the situation is still happening. Every tile
+ * leads to an answer whose first line is about safety, not paperwork.
+ */
+export const TRAVELLER_REPLIES = {
+  en: [
+    { icon: '🆘', label: 'Someone is following me', query: 'A man is following me in a city I do not know. What do I do?' },
+    { icon: '🚕', label: 'Unsafe in a cab', query: 'I feel unsafe with the driver in my app cab. What do I do?' },
+    { icon: '🚆', label: 'Harassed on a train', query: 'A co-passenger is harassing me on a train. What do I do?' },
+    { icon: '🏨', label: 'Hotel feels unsafe', query: 'Hotel staff keep entering my room and I feel unsafe. What do I do?' },
+    { icon: '🚓', label: 'Stopped at night', query: 'The police stopped me late at night. What are my rights as a woman?' },
+    { icon: '📱', label: 'Phone or passport lost', query: 'My phone was stolen while I was travelling. What do I do?' },
+    { icon: '🧾', label: 'Hotel refuses a receipt', query: 'The hotel will not give me a receipt for what I paid. What can I do?' },
+    { icon: '🛺', label: 'Auto refuses meter', query: 'An auto driver refused the meter and demanded extra. What can I do?' },
+    { icon: '🚫', label: 'Refused entry', query: 'I was refused entry to a restaurant because I am a woman alone. What can I do?' },
+    { icon: '🗣', label: 'Street harassment', query: 'Men are passing comments at me on the street. What can I do?' },
+  ],
+  hi: [
+    { icon: '🆘', label: 'कोई पीछा कर रहा है', query: 'एक अनजान शहर में एक आदमी मेरा पीछा कर रहा है। मैं क्या करूँ?' },
+    { icon: '🚕', label: 'कैब में असुरक्षित', query: 'ऐप कैब के ड्राइवर के साथ मैं असुरक्षित महसूस कर रही हूँ। क्या करूँ?' },
+    { icon: '🚆', label: 'ट्रेन में छेड़छाड़', query: 'ट्रेन में एक सहयात्री मुझे परेशान कर रहा है। मैं क्या करूँ?' },
+    { icon: '🏨', label: 'होटल असुरक्षित', query: 'होटल के कर्मचारी बार-बार मेरे कमरे में आते हैं, मैं असुरक्षित महसूस कर रही हूँ। क्या करूँ?' },
+    { icon: '🚓', label: 'रात में पुलिस ने रोका', query: 'पुलिस ने मुझे देर रात रोका। एक महिला के रूप में मेरे क्या अधिकार हैं?' },
+    { icon: '📱', label: 'फोन या पासपोर्ट खोया', query: 'यात्रा के दौरान मेरा फोन चोरी हो गया। मैं क्या करूँ?' },
+    { icon: '🧾', label: 'होटल रसीद नहीं दे रहा', query: 'होटल मुझे भुगतान की रसीद नहीं दे रहा। मैं क्या कर सकती हूँ?' },
+    { icon: '🛺', label: 'ऑटो मीटर से मना', query: 'ऑटो चालक ने मीटर से मना किया और ज़्यादा पैसे माँगे। मैं क्या कर सकती हूँ?' },
+    { icon: '🚫', label: 'प्रवेश से मना', query: 'अकेली महिला होने के कारण मुझे रेस्तराँ में प्रवेश नहीं दिया गया। मैं क्या कर सकती हूँ?' },
+    { icon: '🗣', label: 'सड़क पर छेड़छाड़', query: 'सड़क पर पुरुष मुझ पर फब्तियाँ कसते हैं। मैं क्या कर सकती हूँ?' },
+  ],
+};
+
+export const travellerReplies = (lang) => TRAVELLER_REPLIES[lang] || TRAVELLER_REPLIES.en;
+
 export const QUICK_REPLIES = {
   en: [
     { icon: '🚓', label: 'Police stopped me', query: 'The police stopped me. What are my rights?' },
