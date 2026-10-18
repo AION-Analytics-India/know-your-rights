@@ -199,3 +199,10 @@ patent-pending.
 ---
 
 Built by [AION Analytics (India)](https://github.com/AION-Analytics-India).
+
+## Website, maintainer and security contact
+
+- Website page: https://aionanalytics.in/models/know-your-rights
+- Organisation: https://aionanalytics.in/ (AION Analytics, India)
+- Maintainer and security contact: contact@aionanalytics.in. Report a defect through GitHub issues; report a security concern by email, not in a public issue.
+- Company page: https://www.linkedin.com/company/aion-analytics-india/
