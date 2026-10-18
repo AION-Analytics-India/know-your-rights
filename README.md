@@ -82,7 +82,7 @@ Release is deliberately gated on three things engineering cannot clear alone:
 
 ### ▶ Try it
 
-**[dashboard.aiondashboard.site/models/know-your-rights/demo](https://dashboard.aiondashboard.site/models/know-your-rights/demo)**
+**[aionanalytics.in/models/know-your-rights/demo](https://aionanalytics.in/models/know-your-rights/demo)**
 
 Open, running, no sign-up. Three free questions, then a daily limit — the cap
 exists because every answer is generated on our own hardware.
@@ -163,7 +163,7 @@ failure this project exists to prevent.
 
 The service is in controlled trial rather than open release, because a legal
 answer that is wrong can cost somebody something real. The
-[demo](https://dashboard.aiondashboard.site/models/know-your-rights/demo) is
+[demo](https://aionanalytics.in/models/know-your-rights/demo) is
 open to anyone; what gates a wider release is review by people who know the law.
 
 **We are looking for:**
