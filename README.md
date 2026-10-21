@@ -1,8 +1,8 @@
 # Know Your Rights
 
-**A multilingual legal-information service for Indian citizens. Ask in your own
-language, by voice or by typing, and get a plain-language answer that names the
-law it came from.**
+**A multilingual legal-information service for Indian citizens. Ask by typing in your own
+language and get a plain-language answer that names the law it came from. The
+public pilot is text-only; voice is in development.**
 
 English · हिन्दी · ગુજરાતી — including questions typed in Roman script
 (*"mera landlord notice ke bina nikal raha hai"*).
@@ -11,6 +11,15 @@ English · हिन्दी · ગુજરાતી — including questions t
 > qualified lawyer or a legal aid service, and it does not present itself as one.
 
 ---
+
+
+## Start here
+
+- [Try the public pilot](https://aionanalytics.in/models/know-your-rights/demo). The pilot is text-only and asks for an email address before the first question. Read the consent and current usage limits on that page.
+- [Read the product status and limitations](https://aionanalytics.in/models/know-your-rights). Coverage is partial. This is legal information, not legal advice.
+- Developers: this repository contains the client and [API contract](docs/api.md). The answering service is hosted separately; cloning this repository does not provide that service. See [Running the app](#running-the-app).
+- [Report a reproducible issue](https://github.com/AION-Analytics-India/know-your-rights/issues/new) or [join a discussion](https://github.com/AION-Analytics-India/know-your-rights/discussions). Include the language and expected behavior; leave personal details out of public reports.
+- Reviewers: [read how to take part in the pilot](#trials). Advocate and native-speaker review are still needed.
 
 ## The problem
 
@@ -186,7 +195,7 @@ them: a new Act commencing, an amendment to a Schedule of the Constitution, an
 ordinance.
 
 - **Telegram:** [@AionAnalyticsIndia](https://t.me/AionAnalyticsIndia)
-- **Discord:** [discord.gg/bCuH37bv](https://discord.gg/bCuH37bv)
+- **Discord:** [discord.gg/Dk9Pjc9cVa](https://discord.gg/Dk9Pjc9cVa)
 
 Each notice says *that* the law moved and links the source. It does not tell you
 what the law now says, because at that point nobody has reviewed it — and
