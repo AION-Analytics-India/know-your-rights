@@ -84,6 +84,12 @@ on**, there is no third-party model API in the path, and voice is transcribed
 locally. The evidence recorder in the app writes to your own device and uploads
 nothing — there is no endpoint that would accept it.
 
+**The public pilot asks for an email address before the first question**, since
+21 October 2026. The website that hosts the pilot keeps the email in its own
+records, apart from your questions: the answering service never receives it, and
+the questions it keeps are not linked to it. The email record is deleted 12 months
+after your last question, or sooner if you ask at contact@aionanalytics.in.
+
 Full detail: [`docs/privacy.md`](docs/privacy.md).
 
 ## Status
@@ -100,10 +106,19 @@ Release is deliberately gated on three things engineering cannot clear alone:
 
 ### ▶ Try it
 
-**[dashboard.aiondashboard.site/models/know-your-rights/demo](https://dashboard.aiondashboard.site/models/know-your-rights/demo)**
+**[aionanalytics.in/models/know-your-rights/demo](https://aionanalytics.in/models/know-your-rights/demo)**
 
-Open, running, no sign-up. Three free questions, then a daily limit — the cap
-exists because every answer is generated on our own hardware.
+Open and running. Since 21 October 2026 the pilot asks for an email address
+before the first question, and for two acknowledgements: that it gives legal
+information, not legal advice, and can be wrong, so you check the cited section
+or ask a lawyer before acting on it; and that you have read how your email and
+your questions are handled. Your browser then keeps a random access code, so the
+same device is not asked again. The page shows how many people have tried the
+pilot since 21 October 2026 and how many questions have been answered.
+
+The number of free questions, and how rating an answer unlocks the next, are
+stated on the pilot page. There is also a daily limit, because every answer is
+generated on our own hardware.
 
 **If you use it, please rate the answer.** The pilot exists to find what the
 service gets wrong, and a rating on a *wrong* answer is worth more to us than a
@@ -182,8 +197,9 @@ failure this project exists to prevent.
 
 The service is in controlled trial rather than open release, because a legal
 answer that is wrong can cost somebody something real. The
-[demo](https://dashboard.aiondashboard.site/models/know-your-rights/demo) is
-open to anyone; what gates a wider release is review by people who know the law.
+[demo](https://aionanalytics.in/models/know-your-rights/demo) is
+open to anyone who gives an email address; what gates a wider release is review by
+people who know the law.
 
 **We are looking for:**
 

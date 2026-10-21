@@ -27,14 +27,20 @@ qualified lawyer or a legal aid service.
 - **Privacy**: runs on local infrastructure; no question leaves the machine it
   runs on; no third-party model API; voice transcribed locally; no audio
   retained.
+- **Pilot email**: since 21 October 2026 the public pilot asks for an email
+  address before the first question. The website that hosts the pilot keeps it
+  apart from the questions; the answering service never receives it, and the
+  questions are not linked to it. The email record is deleted 12 months after
+  the person's last question, or sooner on request.
 - **Deterministic remedies**: for situations where an authority oversteps, the
   service returns fixed, pre-checked text naming the forum and the provision,
   rather than generating it. This part works even when the language model does
   not.
 - **Statutory vs practical**: what the law requires and what is merely prudent
   are always separated and never merged.
-- **Status**: public pilot open, text-only, accepting users; not a released
-  product. Release is gated on validation by practising advocates.
+- **Status**: public pilot open, text-only, accepting users who give an email
+  address; not a released product. Release is gated on validation by practising
+  advocates.
 
 ## Coverage
 

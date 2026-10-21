@@ -4,7 +4,8 @@ People ask this service questions they would not ask a stranger — about an
 arrest, a hospital bill, a landlord, a bribe they were asked for. This document
 says exactly what is kept and what is not.
 
-*Last reviewed: 11 September 2026.*
+*Last reviewed: 21 October 2026, when the public pilot began asking for an email
+address (see [The pilot email](#the-pilot-email)). Previously reviewed 11 September 2026.*
 
 ---
 
@@ -13,9 +14,15 @@ says exactly what is kept and what is not.
 - **Your question never leaves the machine the service runs on.** There is no
   third-party model API in the path. Nothing is sent to OpenAI, Google, Anthropic
   or anyone else.
-- **No account, no login, no profile.** The service does not know who you are and
-  has nowhere to put a name if you gave it one.
-- **Your IP address is never written to disk.**
+- **The answering service has no account, no login and no profile.** It does not
+  know who you are and has nowhere to put a name if you gave it one.
+- **The public pilot asks for your email address first.** Since 21 October 2026
+  the website that hosts the pilot asks for an email address before the first
+  question. The website keeps it in its own records, apart from your questions;
+  the answering service never receives it. See [The pilot email](#the-pilot-email).
+- **The answering service never receives or stores your IP address.** The pilot
+  website keeps the IP address you agreed from with your email record; see
+  [The pilot email](#the-pilot-email).
 - **Voice audio is never stored.** It is transcribed locally and discarded.
 
 ## What is recorded
@@ -75,6 +82,41 @@ The service **never receives an IP address, a token or a header**, and never
 computes the hash itself — it only ever sees a value already hashed by something
 else. There is no code path through which a raw address could be logged.
 
+## The pilot email
+
+Since 21 October 2026 the public pilot at
+[aionanalytics.in/models/know-your-rights/demo](https://aionanalytics.in/models/know-your-rights/demo)
+asks for an email address before the first question, with two acknowledgements:
+that the pilot gives legal information, not legal advice, and can be wrong, so you
+check the cited section or ask a lawyer before acting on it; and that you have read
+how your email and your questions are handled. We ask for it so that we can count
+how many people try the pilot, and how often it answers or declines.
+
+The email is kept by the website that hosts the pilot, not by the answering
+service. With the address, the website keeps:
+
+- when it was first and last seen;
+- when you gave the two acknowledgements, and the IP address you gave them from;
+- which versions of the pilot notice and of the privacy policy you accepted;
+- how many questions you asked, and how many were answered or declined.
+
+**The email is never sent to the answering service and never joined to a
+question.** The question log described above is unchanged and holds no email; the
+email record holds counts, not questions.
+
+Your browser keeps a random access code, so the same device is not asked for the
+email again.
+
+The email record is deleted 12 months after your last question, or sooner if you
+ask at [contact@aionanalytics.in](mailto:contact@aionanalytics.in?subject=Pilot%20email%20deletion).
+
+The pilot page shows two counts: how many people have tried the pilot since
+21 October 2026, and how many questions have been answered. Test and AION
+addresses are left out of both. No address appears in either.
+
+What the website keeps is governed by its own privacy policy, which has a section
+on this pilot: [aionanalytics.in/privacy](https://aionanalytics.in/privacy).
+
 ## Voice
 
 Audio is transcribed on the same machine, using local models. **The transcript is
@@ -102,11 +144,17 @@ your browser data removes it.
 
 No analytics, no advertising trackers, no third-party scripts.
 
+That is true of this app. The public pilot page is part of the website, and what
+that page loads is described in the website's privacy policy. On that page your
+browser also keeps the random access code described in
+[The pilot email](#the-pilot-email); clearing your browser data removes it too.
+
 ## What we publish
 
 Aggregate statistics from the pilot are public: how many questions were asked,
 in which languages, how many the service could not answer and in which areas of
-law, how many people came back, and what proportion were rated useful.
+law, how many people came back, and what proportion were rated useful. The pilot
+page also shows the two counts described in [The pilot email](#the-pilot-email).
 
 Every one of those is a count. There is no field in it a person could be found
 in, which is what makes publishing it possible — and publishing it is a stronger
@@ -124,10 +172,15 @@ would be updated before it happened, not after.
 
 ## What you can ask for
 
-Because there is no account, we cannot look up "your" data — there is nothing
-linking records to you. If you can supply the `query_id` shown with an answer, we
-can delete that record. Otherwise there is no identifier to search on, which is a
-consequence of collecting so little.
+The answering service has no account, so we cannot look up "your" questions:
+there is nothing linking them to you. If you can supply the `query_id` shown with
+an answer, we can delete that record. Otherwise there is no identifier to search
+on, which is a consequence of collecting so little.
+
+Your pilot email record is different. It is kept under your address, so you can
+ask for it to be deleted at
+[contact@aionanalytics.in](mailto:contact@aionanalytics.in?subject=Pilot%20email%20deletion).
+Your questions are not linked to it, so they cannot be found through it.
 
 ## Children
 
@@ -138,10 +191,17 @@ The service is not directed at children and asks for no age information.
 This document is versioned in the repository, so any change is visible in its
 history rather than announced and forgotten.
 
+- **21 October 2026.** The public pilot began asking for an email address before
+  the first question, and [The pilot email](#the-pilot-email) was added. Until
+  then this document said "No account, no login, no profile" and "Your IP address
+  is never written to disk" without qualification. Both now apply to the
+  answering service only. The earlier text is in this file's history.
+
 ## Contact
 
 **[contact@aionanalytics.in](mailto:contact@aionanalytics.in?subject=Privacy)**, or via
 [AION Analytics (India)](https://github.com/AION-Analytics-India).
 
 If you want a record deleted and have the `query_id` shown with the answer, send
-it to that address and we will remove it.
+it to that address and we will remove it. The same address deletes your pilot
+email record.
