@@ -3,6 +3,13 @@
 Changes to this repository. This file starts on 21 October 2026; earlier changes
 are in the commit history.
 
+## 2026-10-23
+
+### Security
+- `app/package-lock.json`: `npm audit fix` updated sharp, source-map-js and postcss to patched versions. The app
+  builds unchanged. Six high-severity findings remain in build-time tooling only (the Tailwind 3 chain and the
+  postcss copy inside Next.js); they need Tailwind 4 and Next 16, which are planned, not done.
+
 ## 2026-10-21
 
 ### Documentation
