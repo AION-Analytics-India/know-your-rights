@@ -3,6 +3,12 @@
 Changes to this repository. This file starts on 21 October 2026; earlier changes
 are in the commit history.
 
+## 2026-10-25
+
+### Fixed
+- `app/components/Header.jsx`: on a phone the app name and tagline were cut off ("Kno..."). The title now has its
+  own row and the SOS, language and help buttons sit below it.
+
 ## 2026-10-23
 
 ### Security

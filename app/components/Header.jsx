@@ -9,7 +9,10 @@ import { LANGUAGES, t } from '../lib/i18n';
 export default function Header({ language, onLanguageChange, onHelp }) {
   return (
     <header className="sticky top-0 z-20 bg-ink text-paper shadow-premium">
-      <div className="mx-auto flex max-w-2xl items-center gap-3 px-4 py-3">
+      {/* On a phone the title gets its own row and the controls sit below it,
+          right-aligned: side by side, the controls left the title about 120 px
+          and it wrapped to seven lines (mobile check, 25 Oct 2026). */}
+      <div className="mx-auto flex max-w-2xl flex-wrap items-center gap-x-3 gap-y-2 px-3 py-2 sm:flex-nowrap sm:px-4 sm:py-3">
         <img
           src="/favicon.svg"
           alt="AION Analytics"
@@ -17,11 +20,13 @@ export default function Header({ language, onLanguageChange, onHelp }) {
           height={28}
           className="shrink-0 rounded"
         />
-        <div className="min-w-0 flex-1">
-          <h1 className="truncate text-base font-semibold leading-tight" lang={language}>
+        <div className="min-w-0 flex-1 basis-[calc(100%-3rem)] sm:basis-auto">
+          {/* Wrap, never truncate: on a 390 px phone the controls leave about 120 px,
+              and truncation cut the name to "Kno…" (mobile check, 25 Oct 2026). */}
+          <h1 className="break-words text-base font-semibold leading-tight" lang={language}>
             {t(language, 'appName')}
           </h1>
-          <p className="truncate text-xs text-paper-muted" lang={language}>
+          <p className="break-words text-xs leading-snug text-paper-muted" lang={language}>
             {t(language, 'tagline')}
           </p>
         </div>
@@ -30,6 +35,7 @@ export default function Header({ language, onLanguageChange, onHelp }) {
             emergency should never have to find their way back to the home
             screen first. It is a link, not a button, so it still works if the
             app's JavaScript has not finished loading. */}
+        <div className="ml-auto flex items-center gap-2">
         <Link
           href="/emergency"
           aria-label={t(language, 'sosLabel')}
@@ -62,6 +68,7 @@ export default function Header({ language, onLanguageChange, onHelp }) {
         >
           ?
         </button>
+        </div>
       </div>
     </header>
   );
