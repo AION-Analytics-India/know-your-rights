@@ -84,8 +84,7 @@ on**, there is no third-party model API in the path, and voice is transcribed
 locally. The evidence recorder in the app writes to your own device and uploads
 nothing — there is no endpoint that would accept it.
 
-**The public pilot asks for an email address before the first question**, since
-21 October 2026. The website that hosts the pilot keeps the email in its own
+**When the public pilot accepts new questions, it asks for an email address** before the first question (introduced 21 October 2026). The website that hosts the pilot keeps the email in its own
 records, apart from your questions: the answering service never receives it, and
 the questions it keeps are not linked to it. The email record is deleted 12 months
 after your last question, or sooner if you ask at contact@aionanalytics.in.
@@ -94,7 +93,7 @@ Full detail: [`docs/privacy.md`](docs/privacy.md).
 
 ## Status
 
-**Public pilot: open, text-only, and accepting users. Not a released product.**
+**Public text-only pilot, not a released product.** As checked on 6 November 2026, the [live pilot page](https://aionanalytics.in/models/know-your-rights/demo) displays **"Not taking questions right now"**. Its other descriptive copy still calls the pilot open; rely on the live submission availability rather than that promotional label. New-question access may resume without a repository release.
 
 Release is deliberately gated on three things engineering cannot clear alone:
 
@@ -108,13 +107,7 @@ Release is deliberately gated on three things engineering cannot clear alone:
 
 **[aionanalytics.in/models/know-your-rights/demo](https://aionanalytics.in/models/know-your-rights/demo)**
 
-Open and running. Since 21 October 2026 the pilot asks for an email address
-before the first question, and for two acknowledgements: that it gives legal
-information, not legal advice, and can be wrong, so you check the cited section
-or ask a lawyer before acting on it; and that you have read how your email and
-your questions are handled. Your browser then keeps a random access code, so the
-same device is not asked again. The page shows how many people have tried the
-pilot since 21 October 2026 and how many questions have been answered.
+When accepting new questions, the pilot requires an email address and two acknowledgements: that it gives legal information, not legal advice, may be wrong, and cited law should be verified; and that you have read how email and questions are handled. The browser keeps a random access code for the trial. Check the [live pilot page](https://aionanalytics.in/models/know-your-rights/demo) for current availability and limits. The interface currently displays a temporary pause on new questions.
 
 The number of free questions, and how rating an answer unlocks the next, are
 stated on the pilot page. There is also a daily limit, because every answer is
