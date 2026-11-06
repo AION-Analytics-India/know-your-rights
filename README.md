@@ -93,7 +93,7 @@ Full detail: [`docs/privacy.md`](docs/privacy.md).
 
 ## Status
 
-**Public text-only pilot, not a released product.** As checked on 6 November 2026, the [live pilot page](https://aionanalytics.in/models/know-your-rights/demo) displays **"Not taking questions right now"**. Its other descriptive copy still calls the pilot open; rely on the live submission availability rather than that promotional label. New-question access may resume without a repository release.
+**Public text-only pilot, not a released product.** As checked on 6 November 2026, the [live pilot page](https://aionanalytics.in/models/know-your-rights/demo) displays **"Not taking questions right now"**. New-question access may resume without a repository release; always check the live page before trying to submit.
 
 Release is deliberately gated on three things engineering cannot clear alone:
 
